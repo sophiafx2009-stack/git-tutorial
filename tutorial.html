@@ -1,177 +1,331 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tutorial | Biografia </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tutorial | Git</title>
     <link rel="stylesheet" href="style-tutorial.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header class="cabecalho">
         <div class="container">
+
             <p class="etiqueta">Git</p>
 
-            <h1> Linus Torvalds </h1>
+            <h1> Tutorial de Git </h1>
 
             <p class="subtitulo">
-
-                Descubra de uma forma facil e simples usar o Git 
-                e um pouco sobre quem foi seu criador!
+                Aprenda de forma fácil e simples a usar o Git
+                para organizar seus projetos e salvar suas alterações!
             </p>
 
-<nav class="menu-link">
-
-               
-                <a class="menu-link"href="index.html">Home  </a>
-                <a class="menu-link"href="biografia.html">Biografia </a>
-              
-              
-
+            <nav class="menu-principal">
+                <a class="menu-link" href="index.html">Home</a>
+                <a class="menu-link" href="biografia.html">Biografia</a>
             </nav>
 
+        </div>
+    </header>
 
+    <main class="container">
 
-    </div>
-
-   
-</header>
-
-
-
-<main>
-<main class="container">
         <section class="secao">
-            <h2>Quem é?</h2>
 
-            <h2>
-               Linus Benedict Torvalds é um engenheiro de software, nascido na Finlândia e naturalizado estado-unidense em 2010, criador, e por muito tempo o desenvolvedor mais importante do núcleo Linux, sendo utilizado em importantes sistemas Linux, Android e Chrome OS.
-            </h2>
-
-
-            <p> Torvalds nasceu em Helsínquia, na Finlândia. É filho dos jornalistas Anna e Nils Torvalds, e neto do estatístico Leo Törnqvist e do poeta Ole Torvalds. Seus pais eram radicais do campus da Universidade de Helsínquia, na década de 1960. Sua família pertence à minoria de língua sueca (5,5 % da população da Finlândia). Seu interesse por computadores começou com um Commodore VIC-20. Nessa época, ele fica conhecido por ter escrito um clone do Pac-Man chamado Cool Man.</p>
-
-            <p>É casado com Tove Torvalds (Monni, de nascimento) — hexacampeã nacional de karatê na Finlândia — a qual ele conheceu no outono de 1993. Linus passava exercícios introdutórios no laboratório de informática para os alunos, e solicitou aos participantes do curso que lhe enviassem um e-mail como teste, no qual ela o convidou para saírem em um primeiro encontro. Mais tarde, Linus e Tove se casaram e tiveram três filhas: Patricia Miranda (nascida em 1996), Daniela Yolanda (nascida em 1998), e Celeste Amanda (nascida em 2000), das quais duas nasceram nos Estados Unidos da América. Linus usa suas datas de nascimento (em hexadecimal) como aceitáveis números mágicos na chamada de reinicialização do núcleo (reboot).</p>
-            <blockquote class="citacao">
-                 
-                "Everything you lose is a step you take"
-
-            </blockquote>
+            <h2>O que é Git?</h2>
 
             <p>
-                Frase dita pela cantora e compositora <cite>Taylor Swift</cite>
+                O Git é um sistema de controle de versão que permite
+                acompanhar as mudanças feitas em um projeto. Com ele,
+                podemos salvar versões do nosso código, voltar a versões
+                anteriores e trabalhar em equipe.
+            </p>
+
+            <p>
+                Neste tutorial, você vai aprender os comandos básicos
+                para começar a usar o Git nos seus projetos.
+            </p>
+
+            <h2>Passo 1 - Instalar o Git</h2>
+
+            <p>
+                Primeiro, precisamos instalar o Git no computador.
+                Para isso, acesse o site oficial e baixe a versão
+                compatível com o seu sistema operacional.
+            </p>
+
+            <p>
+                Site oficial:
+                <a href="https://git-scm.com/downloads" target="_blank">
+                    Baixar Git
+                </a>
+            </p>
+
+            <p>
+                Depois de instalar, abra o Git Bash ou o terminal
+                do seu computador para começar a utilizar os comandos.
+            </p>
+
+            <h2>Passo 2 - Configurar o Git</h2>
+
+            <p>
+                Antes de começar, precisamos configurar nosso nome
+                e e-mail. Essas informações serão utilizadas para
+                identificar quem fez cada alteração no projeto.
+            </p>
+
+            <pre><code>git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@exemplo.com"</code></pre>
+
+            <p>
+                Substitua "Seu Nome" pelo seu nome e o e-mail pelo
+                endereço que deseja utilizar.
+            </p>
+
+            <h2>Passo 3 - Criar uma pasta para o projeto</h2>
+
+            <p>
+                Crie uma pasta no computador para guardar os arquivos
+                do seu projeto. Depois, abra o terminal nessa pasta.
+                No Windows, você também pode abrir o terminal e navegar
+                até a pasta usando o comando cd.
+            </p>
+
+            <pre><code>cd nome-da-pasta</code></pre>
+
+            <p>
+                Troque "nome-da-pasta" pelo nome da pasta que você criou.
+            </p>
+
+            <h2>Passo 4 - Iniciar o Git</h2>
+
+            <p>
+                Agora, vamos iniciar o Git dentro da pasta do projeto.
+                Esse comando cria um repositório Git, que permite
+                acompanhar as alterações dos arquivos.
+            </p>
+
+            <pre><code>git init</code></pre>
+
+            <p>
+                Pronto! A pasta agora possui um repositório Git.
+            </p>
+
+            <h2>Passo 5 - Verificar as alterações</h2>
+
+            <p>
+                Depois de criar ou modificar arquivos, podemos verificar
+                quais alterações foram feitas utilizando o comando
+                git status.
+            </p>
+
+            <pre><code>git status</code></pre>
+
+            <p>
+                Ele mostra os arquivos novos, modificados e aqueles
+                que ainda não foram preparados para serem salvos.
+            </p>
+
+            <h2>Passo 6 - Preparar os arquivos</h2>
+
+            <p>
+                Para selecionar os arquivos que queremos incluir no
+                próximo salvamento, utilizamos o comando git add.
+            </p>
+
+            <pre><code>git add .</code></pre>
+
+            <p>
+                O ponto significa que todos os arquivos e alterações
+                da pasta atual que não forem ignorados pelo Git serão
+                adicionados à área de preparação.
+            </p>
+
+            <h2>Passo 7 - Salvar as alterações</h2>
+
+            <p>
+                Agora vamos registrar as alterações selecionadas.
+                No Git, esse registro é chamado de commit. Ele recebe
+                uma mensagem explicando o que foi alterado.
+            </p>
+
+            <pre><code>git commit -m "Primeiro commit"</code></pre>
+
+            <p>
+                A mensagem entre aspas pode ser modificada para
+                descrever as alterações realizadas no projeto.
+            </p>
+
+            <h2>Passo 8 - Criar um repositório no GitHub</h2>
+
+            <p>
+                O GitHub é uma plataforma online que permite armazenar
+                repositórios Git e compartilhar projetos com outras
+                pessoas.
+            </p>
+
+            <p>
+                Acesse o site, faça login e clique em "New repository"
+                para criar um novo repositório. Escolha um nome para
+                o projeto e crie o repositório.
+            </p>
+
+            <p>
+                Site:
+                <a href="https://github.com/" target="_blank">
+                    Acessar GitHub
+                </a>
+            </p>
+
+            <h2>Passo 9 - Conectar o projeto ao GitHub</h2>
+
+            <p>
+                Depois de criar o repositório online, precisamos conectar
+                a pasta do computador a ele. Copie o endereço HTTPS
+                do repositório no GitHub e utilize os comandos abaixo.
+            </p>
+
+            <pre><code>git branch -M main
+git remote add origin https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git</code></pre>
+
+            <p>
+                Substitua o endereço de exemplo pelo endereço do seu
+                próprio repositório. O comando remote add cria a conexão
+                entre o projeto local e o repositório online.
+            </p>
+
+            <h2>Passo 10 - Enviar o projeto</h2>
+
+            <p>
+                Para enviar os commits do computador para o GitHub,
+                utilizamos o comando git push.
+            </p>
+
+            <pre><code>git push -u origin main</code></pre>
+
+            <p>
+                Na primeira vez, pode ser necessário autenticar sua
+                conta. Depois que o envio terminar, os arquivos e
+                as alterações registradas estarão disponíveis no GitHub.
+            </p>
+
+            <h2>Passo 11 - Atualizar o projeto</h2>
+
+            <p>
+                Sempre que você modificar os arquivos e quiser salvar
+                uma nova versão, pode repetir os comandos abaixo.
+            </p>
+
+            <pre><code>git add .
+git commit -m "Descreva as alterações"
+git push</code></pre>
+
+            <p>
+                Se outras pessoas modificarem o repositório online,
+                você pode buscar e integrar essas alterações usando
+                git pull antes de continuar trabalhando.
+            </p>
+
+            <pre><code>git pull</code></pre>
+
+            
+
+          
+<section class="secao">
+
+    <h2>Principais comandos do Git</h2>
+
+    <table class="tabela">
+
+        
+
+        <thead>
+            <tr>
+                <th scope="col">Comando</th>
+                <th scope="col">Função</th>
+                <th scope="col">Uso</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th scope="row">git init</th>
+            <td>Iniciar um repositório</td>
+            <td>Cria um repositório Git na pasta do projeto</td>
+        </tr>
+
+        <tr>
+            <th scope="row">git status</th>
+            <td>Verificar alterações</td>
+            <td>Mostra os arquivos novos ou modificados</td>
+        </tr>
+
+        <tr>
+            <th scope="row">git add .</th>
+            <td>Preparar arquivos</td>
+            <td>Adiciona as alterações à área de preparação</td>
+        </tr>
+
+        <tr>
+            <th scope="row">git commit</th>
+            <td>Registrar alterações</td>
+            <td>Salva um registro das alterações selecionadas</td>
+        </tr>
+
+        <tr>
+            <th scope="row">git push</th>
+            <td>Enviar alterações</td>
+            <td>Envia os commits para o repositório remoto</td>
+        </tr>
+
+        <tr>
+            <th scope="row">git pull</th>
+            <td>Atualizar o projeto</td>
+            <td>Busca e integra alterações do repositório remoto</td>
+        </tr>
+
+        <tr>
+            <th scope="row">git log</th>
+            <td>Consultar histórico</td>
+            <td>Mostra o histórico de commits realizados</td>
+        </tr>
+
+    </table>
+
+</section>
+
+
+            <h2>Conclusão</h2>
+
+            <p>
+                O Git é uma ferramenta muito útil para quem está
+                aprendendo programação. Com seus comandos básicos,
+                podemos organizar projetos, acompanhar mudanças e
+                compartilhar nosso código com outras pessoas.
             </p>
 
         </section>
-
-        <section class="secao">
-            <h2> Conhecimentos Técnicos</h2>
-            <table class="tabela-conhecimentos">
-
-                <caption> Resumo de conhecimentos </caption>
-                <thead> 
-                    <tr>
-                        <th scope="col"> Área </th>
-                        <th scope="col"> Tecnologias </th>
-                        <th scope="col"> Uso </th>
-
-                    </tr>
-                </thead>
-
-              
-                    <tr>
-                        <th scope="row"> Front-end</th>
-                        <td>HTML e CSS</td>
-                        <td>Estrutura e apresentação de páginas</td>
-                     
-                    </tr>
-              
-
-                
-                    <tr>
-                        <th scope="row">Back-end</th>
-                        <td>Java Spring e Spring Boot</td>
-                        <td>Aplicações e API's</td>
-
-                        </tr>
-                
-
-                <tr>
-                        <th scope="row"> Dados</th>
-                        <td>SQL e Banco de Dados</td>
-                        <td>Conultas e Persistencia</td>
-
-                </tr>
-                
-                    <tr>
-                        <th scope="row"> Operações</th>
-                        <td>Zabbix,Grafana,Dynatraca br
-                            e Powershell</td>
-                        <td>Monitoramento e automação</td>
-                    
-                    </tr>
-               
-
-            </table>
-
-        </section>
-
 
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
-
-<footer class="rodape">
+    <footer class="rodape">
         <div class="container">
+
             <p>&copy; 2026 Sophia Flores</p>
 
             <address>
-
-                <a href="mailto:sophiafx2009@gmail.com"> Email </a>
+                <a href="mailto:sophiafx2009@gmail.com">Email</a>
                 <span> | </span>
-                <a href="tel:+5515981348782"> Telefone </a>
+                <a href="tel:+5515981348782">Telefone</a>
                 <span> | </span>
-                <a href="https://github.com/sophiafx2009-stack/sophiafx2009-stack.github.io" target="blank"> GitHub</a>
+                <a href="https://github.com/sophiafx2009-stack/sophiafx2009-stack.github.io"
+                   target="_blank">GitHub</a>
             </address>
-
-
-
-
-
-
-
 
         </div>
     </footer>
-    
 
- 
+</body>
+</html>

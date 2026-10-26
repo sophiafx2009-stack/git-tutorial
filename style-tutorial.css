@@ -5,20 +5,51 @@
 
 
 body{
+
     margin: 0;
-
-    background-color: #ffecded8;
-    color: white;
-
+    background-color: #ebe7e5d8;
+    color: #271b15;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+}
+
+p, h2, h3, li {
+    color: rgb(39, 27, 21)
 
 
 }
 
- p, h2, h3{
-    color: rgb(39, 27, 21);
+
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    color: #271b15;
+    margin-top: 20px;
 }
+
+.tabela caption {
+    color: #271b15;
+    margin-bottom: 10px;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px solid rgb(79, 50, 36);
+    padding: 12px;
+    text-align: left;
+    color: #271b15;
+}
+
+.tabela thead {
+    background-color: rgb(190, 143, 99);
+}
+
+.tabela tr {
+    background-color: #ebe7e5d8;
+}
+
+
 
 h1{
     font-size: 38px;
@@ -95,7 +126,7 @@ code, pre{
 
     padding: 20px 20px;
     margin-left: 10px;
-    margin-right: 10x;
+    margin-right: 5x;
 
     background-color: rgb(190, 143, 99);
     color: rgb(5, 3, 3);
@@ -133,4 +164,20 @@ img{
 
 .rodape a{
     text-decoration: none;
+}
+
+blockquote{
+    color: #000000;
+}
+
+ul{
+    color: #000000;
+}
+
+
+.rodape{
+    margin-top: 40px;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
